@@ -53,7 +53,6 @@ cudaMemcpy(devBuffer, buffer, numbytes, cudaMemcpyHostToDevice);
 stop_timer(memory_start_time, "\n\t  Memory Transfer to GPU");
 fclose(infile);
 
-/* free the memory we used for the buffer */
 free(buffer);
 cudaFree(devBuffer);
 
