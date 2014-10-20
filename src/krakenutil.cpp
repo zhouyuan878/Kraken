@@ -112,7 +112,7 @@ namespace kraken {
       for (sit++; sit != max_taxa.end(); sit++)
         max_taxon = lca(parent_map, max_taxon, *sit);
     }
-
+    
     return max_taxon;
   }
 
